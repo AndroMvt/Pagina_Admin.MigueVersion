@@ -1,0 +1,143 @@
+head {
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+#logoHeader {
+    width: 320px; 
+    height: auto; 
+  }
+  
+  @media (max-width: 768px) {
+    #logoHeader {
+      width: 50px;
+    }
+  }
+
+/*
+  Símbolo '#' se utiliza para seleccionar un elemento por su ID
+  Simbolo '.' se utiliza para seleccionar un elemento por su clase.
+*/
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .menu li {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    float:right;
+    margin-right: 20px;
+    margin-top: 05px;
+}
+
+p{
+    text-align: center;
+    font-family:'Arial';
+}
+
+body{
+    background: #CCCCCC;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .slider {
+    display: flex;
+    width: calc(300px * 4);
+    transition: transform 0.5s ease;
+  }
+  .slider img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .prev {
+    left: 10px;
+  }
+  .next {
+    right: 10px;
+  }
+  
+  .Hslogo{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 400px; 
+    height: auto;
+  }
+
+  #cajaPrecios{
+    font-family:'Arial';
+    font-weight: bold;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .box {
+    width: 300px;
+    height: 350px;
+    background-color: #75b9cb;
+    margin: 20px;
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+  }
+  
+  .box img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+  }
+  
+  .box h3 {
+    font-size: 24px;
+    font-family:'Arial';
+    font-weight: bold;
+  }
+  
+  .box p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .box .price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  footer {
+    background-color: #146C94;
+    padding: 50px 0;
+    color: #fff;
+  }
+  
+  .container img {
+    height: 50px;
+    margin-right: 20px;
+  }

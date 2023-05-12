@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Styles_Front.css">
+        <title> FINSATECH </title>
+        <img id="logoHeader" src="Imagenes Source/Logo Prinp Solo.png" alt="Logo">
+        <nav>
+            <ul class="menu" style="font-family: 'Franklin Gothic Medium';">
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Integrants of team</a></li>
+            </ul>
+        </nav>
+
+    </head>
+
+    <body style="background-color: #F6F1F1"   >
+        <div class="slider-container">
+            <div class="slider">
+              <img src="Imagenes Source/Img_1.png" alt="Image 1">
+              <img src="Imagenes Source/Img_2.png" alt="Image 2">
+              <img src="Imagenes Source/Img_3.png" alt="Image 3">
+              <img src="Imagenes Source/Img_4.png" alt="Image 4">
+              <img src= alt="Image 5">
+              <img src= alt="Image 6">
+              <img src= alt="Image 7">
+              <img src= alt="Image 8">
+              <img src= alt="Image 9">
+            </div>
+
+        <button class="prev"> ← </button>
+        <button class="next"> → </button>
+        </div>      
+
+            <script>
+                const slider = document.querySelector('.slider');
+                const prevBtn = document.querySelector('.prev');
+                const nextBtn = document.querySelector('.next');
+
+                let direction;
+
+                prevBtn.addEventListener('click', () => {
+                direction = -1;
+                moveSlider();
+                });
+
+                nextBtn.addEventListener('click', () => {
+                direction = 1;
+                moveSlider();
+                });
+
+                function moveSlider() {
+                    slider.style.transform = `translateX(${direction * 300}px)`;
+                    setTimeout(() => {
+                        if (direction === 1) {
+                        slider.appendChild(slider.firstElementChild);
+                        } else {
+                        slider.prepend(slider.lastElementChild);
+                        }
+                        slider.style.transform = 'translateX(0)';
+                    }, 500);
+                }
+            </script>
+
+        <h1 style=" text-align: center; background-color: #AFD3E2; font-family: 'Franklin Gothic Medium'">ABOUT US</h1>
+ 
+            <p style="font-size:16px;">FinsaTech is an insurance company and provider of services and payment in medical expenses, analysis and any inconvenience or accident; Our Goal is achieve the accessibility of payment and reliable insurance made available to each of the members of underdeveloped countries.</p> 
+
+            <p style="font-size:16px;"> We create packages made for each role within society that cover the surreal needs of medical payments for accidents, inconveniences or any reason for the people who day by day go out to create a better future for all of us.</p> 
+
+
+            <h2 style=" text-align: center; margin-top: 40px; size: 50px; font-family: 'Franklin Gothic Medium';">- RECENT PROYECTS - </h2>
+
+            <img class="Hslogo" src= "Imagenes Source/HS Logo Og.png" alt="LogoHealthscript">
+
+            <p style="  padding-top: 20px;font-size:16px;">Our finance Asurance Program HEALTHSCRIPT &copy; Allow us to help and benefit the programs and services given in country of subdevelopment, our goal whit this program is create a network of help and accesible payments for all medical payments,accidents and medicals appointments than the mayority of people around in Latinoamerica like Argentina,Mexico,Peru and mucho more can't afford</p>
+
+
+            <h2 style=" text-align: center; margin-top: 40px; size: 50px; font-family: 'Franklin Gothic Medium';">- packages- </h2>
+
+            <p style="font-size:16px;"> We create packages made for each role within society that cover the surreal needs of medical payments for accidents, inconveniences or any reason for the people who day by day go out to create a better future for all of us.</p> 
+
+            <div  id="cajasPrecios" class="container">
+                <div class="box">
+                  <img src="Imagenes Source/PlanMedicobasico.png" alt="Imagen">
+                  <h3>PAQUETE 1</h3>
+                  <p>Seguro Basico</p>
+                  <p class="price">$99.99</p>
+                </div>
+                
+                <div class="box">
+                  <img src="Imagenes Source/Estudiante1 (2).jpg" alt="Imagen">
+                  <h3>PAQUETE 2</h3>
+                  <p>Seguro estudiantes/foraneos</p>
+                  <p class="price">$99.99</p>
+                </div>
+                
+                <div class="box">
+                  <img src="Imagenes Source/Mamassolteras1.jpg" alt="Imagen">
+                  <h3>PAQUETE 3</h3>
+                  <p>Seguro mamas primerizas o solteras</p>
+                  <p class="price">$99.99</p>
+                </div>
+
+                <div class="box">
+                    <img src="Imagenes Source/Turista1.jpg" alt="Imagen">
+                    <h3>PAQUETE 4</h3>
+                    <p>Seguros turistas</p>
+                    <p class="price">$99.99</p>
+                  </div>
+                  
+                  <div class="box">
+                    <img src="Imagenes Source/Indocumentados2.png" alt="Imagen">
+                    <h3>PAQUETE 5</h3>
+                    <p>Seguros Inmigrantes</p>
+                    <p class="price">$99.99</p>
+                  </div>
+                  
+                  <div class="box">
+                    <img src="Imagenes Source/JubilacionSeñora.jpg" alt="Imagen">
+                    <h3>PAQUETE 6</h3>
+                    <p>Seguro Jubilacion</p>
+                    <p class="price">$99.99</p>
+                  </div>
+                                
+            </div>
+
+    </body>
+
+    <footer style="margin-top: 450px;">
+        <div style="background-color: #146C94 ; padding-top: 20px;" class="container">
+          <img src="Imagenes Source/Logo Princp White.png" alt="FotterLogo">
+          <p>&copy; Universidad De Guadalajara. CUCEI . ADMINISTRACION DE PROYECTOS TECNOLOGICOS. 2023 FINSATECH/HEALTHSCRIPT. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</html>

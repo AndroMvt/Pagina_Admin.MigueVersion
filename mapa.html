@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mapa de Latinoamérica</title>
+    <style>
+      #mapa {
+        width: 800px;
+        height: 600px;
+        margin: 0 auto;
+        background-color: #f2f2f2;
+        position: relative;
+      }
+      
+      path {
+        fill: #ccc;
+        stroke: #fff;
+        stroke-width: 1;
+        transition: fill 0.3s ease-in-out;
+      }
+      
+      .bajo {
+        fill: #ffaaaa;
+      }
+      
+      .medio {
+        fill: #ffc87c;
+      }
+      
+      .alto {
+        fill: #aaffaa;
+      }
+      
+      .tooltip {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #333;
+        color: #fff;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 12px;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+      
+      path:hover {
+        fill-opacity: 0.7;
+      }
+      
+      path:hover + .tooltip {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <svg id="mapa" viewBox="-100 -70 800 600">
+      <g>
+        <path class="bajo" d="M324.5,278.9c-2.8,0.8-5.6,1.6-8.4,2.4l-0.1,0c0,0,0,0,0,0c-0.1,0.2-0.3,0.4-0.4,0.6c-0.4,0.6-0.7,1.2-1.1,1.7
+          c-0.2,0.3-0.5,0.6-0.8,0.9c-0.1,0.1-0.2,0.2-0.3,0.3c-0.2,0.2-0.4,0.4-0.6,0.6c-0.2,0.2-0.4,0.4-0.7,0.6c...
+        </path>
+        <path class="medio" d="M454.9,254.2l0.1,0.4l-0.1,0.2c-0.1,0.2-0.1,0.4-0.2,0.6l-0.1,0.2c-0.3,0.6-0.5,1.1-0.8,1.6c-0.2,0.3-0.5,0.6-0.7,0.9
+          c-0.1,0.1-0.2,0.2-0.3,0.4c-0.2,0.2-0.4,0.4-0.6,0.6c-0.2,0.2-0....
+
+        <!-- Agregar más paths para los demás países de Latinoamérica aquí -->
+
+      </g>
+      <text class="tooltip"
